@@ -1,0 +1,13 @@
+{
+  "name": "insta_msg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "dependencies": {
+    "puppeteer": "^19.11.1"
+  }
+}
