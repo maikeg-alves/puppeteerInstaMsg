@@ -10,8 +10,8 @@ const fs = require("fs");
     const page = await browser.newPage();
 
     await page.setViewport({ width: 1080, height: 500 });
-    //ogin instagram 
 
+    //login instagram com cookies
     const cookiesJson = fs.readFileSync("./cookies.json");
     const cookies = JSON.parse(cookiesJson);
 
@@ -23,7 +23,7 @@ const fs = require("fs");
     await page.goto("https://www.instagram.com")
 
 
-    // remove o popup 
+    // remove o popup que pede para habilitar notificação
     await page.waitForSelector('div._a9-z')
     await page.click('div._a9-z > button._a9--._a9_1')
 
